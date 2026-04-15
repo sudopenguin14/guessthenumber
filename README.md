@@ -4,4 +4,4 @@ a security warning. This is fine as I am not a verified developer. Click on More
 anyway. Enjoy the game!
 
 On GNU/Linux
-Open the terminal where you downloaded the game and type "./guessthenumber-linux" to launch it
+Open the terminal in the directory where you downloaded the game and type "./guessthenumber-linux" to launch it
