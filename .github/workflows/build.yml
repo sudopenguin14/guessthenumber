@@ -1,0 +1,31 @@
+name: Build Windows EXE
+
+on:
+  push:
+    branches: [ master ] # Runs every time you push to the main branch
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest # Tells GitHub to use a Windows server
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install PyInstaller
+      run: pip install pyinstaller
+
+    - name: Build EXE
+      run: pyinstaller --/home/aayush/guess-the-number.py # Change this to your filename!
+
+    - name: Upload Result
+      uses: actions/upload-artifact@v4
+      with:
+        name: GuessingGame-Windows
+        path: dist/*.exe
+
