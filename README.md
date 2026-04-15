@@ -1,0 +1,7 @@
+For Windows:
+Download the file "guessthenumber-win.exe" from releases. Double click to open it. You may get
+a security warning. This is fine as I am not a verified developer. Click on More info, then run
+anyway. Enjoy the game!
+
+On GNU/Linux
+Open the terminal where you downloaded the game and type "./guessthenumber-linux" to launch it
