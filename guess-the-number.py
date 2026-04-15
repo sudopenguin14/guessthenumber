@@ -15,5 +15,5 @@ def game():
     except ValueError:
       print("Please enter a valid whole number")
 game()
-    
-  
+
+input("\nPress Enter to exit...")
